@@ -1,3 +1,16 @@
+:root {
+    --side-padding: 48px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color:burlywood;
+
+    display:flex;
+    justify-content: center;
+}
+
 main {
     width: 80vw;
     display: flex;
@@ -11,20 +24,65 @@ main {
 }
 
 #content-container > div {
-    padding: 0px 48px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
 }
 
 #form-box-container {
-    padding: 24px 48px;
-    margin: 64px 0px;
+    padding: 24px var(--side-padding);
+    margin: 64px 0px 32px 0px;
     background-color: white;
+    box-shadow: 1px 10px 10px rgba(0,0,0,0.42);
+}
+
+#form-title {
+    font-weight: bold;
 }
 
 #form-container {
+    padding: 16px 0px;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 16px;
+    width: 80%
 }
 
+.text-input {
+    border: 1px solid #E5E7EB;
+    padding: 4px 12px;
+    border-radius: 4px;
+    width: 12vw;
+}
+
+.text-input:focus {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.42);
+    border: 2px solid blue;
+}
+
+.input-box, .input-box-password {
+    flex: 50%;
+}
+
+#bottom-container > span {
+    font-size: 16px;
+}
+
+#create-btn {
+    background-color: #596D48;
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    width: 250px;
+    padding: 12px 36px;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+
 label {
-    
+    font-size: 12px;
+    letter-spacing: 1px;
 }
