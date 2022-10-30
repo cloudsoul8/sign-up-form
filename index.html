@@ -13,6 +13,14 @@
     <main>
         <div id="img-container">
             <img src="imgs/leftside.avif">
+            <div id="logo-container">
+                <img src="imgs/odin-lined.png">
+                <p>ODIN</p> 
+            </div>
+            
+            <div id="credits">
+                <p>Photo by <u>Haile West</u> on <u>Unsplash</u></p> 
+            </div>
         </div>
 
         <div id="content-container">
@@ -23,44 +31,44 @@
             </div>
 
             <div id="form-box-container">
-                <span id="form-title">Lorem Ipsum</span>
+                <span id="form-title">Let's do this!</span>
 
-                <form action="/" method="post" id="form-container">
+                <form action="#" method="post" id="form-container">
                     <div class="input-box">
                         <label for="first-name">FIRST NAME</label><br>
-                        <input type="text" id="first-name" class="text-input">
+                        <input type="text" id="first-name" class="text-input" required>
                     </div>
                     
                     <div class="input-box">
                         <label for="last-name">LAST NAME</label><br>
-                        <input type="text" id="last-name" class="text-input">
+                        <input type="text" id="last-name" class="text-input" required>
                     </div>
 
                     <div class="input-box">
                         <label for="email">EMAIL</label><br>
-                        <input type="text" id="email" class="text-input">
+                        <input type="email" id="email" class="text-input" required>
                     </div>
                     
                     <div class="input-box">
                         <label for="phone-number"">PHONE NUMBER</label><br>
-                        <input type="text" id="phone-number" class="text-input">
+                        <input type="text" id="phone-number" class="text-input" pattern="[0-9]*">
                     </div>
                     
                     <div class="input-box-password">
                         <label for="password">PASSWORD</label><br>
-                        <input type="password" id="password" class="text-input">
+                        <input type="password" id="password" class="text-input" minlength="8" maxlength="32" required>
                     </div>
 
                     <div class="input-box-password">
                         <label for="confirm-password">CONFIRM PASSWORD</label><br>
-                        <input type="password" id="confirm-password" class="text-input">
+                        <input type="password" id="confirm-password" class="text-input" required>
                     </div>
 
                 </form>
             </div>
 
             <div id="bottom-container">
-                <button id="create-btn">Create Account</button><br>
+                <button id="create-btn" type="submit" form="form-container">Create Account</button><br>
                 <span>Already have an account? <a href="some.html">Log in</a></span>
             </div>
         </div>
